@@ -5,7 +5,8 @@ const sumAll = function(start, stop) {
 
     if (start<0 || stop<0) { 
         result = 'ERROR'
-    } else if (typeof start !== 'number' || typeof stop !== 'number'){
+    } else if (typeof start !== 'number' || typeof stop !== 'number'){ 
+        /* use this instead: Number.isInteger(value) */
         result = 'ERROR';
     } else if (start > stop) {
         min = stop;
@@ -23,4 +24,4 @@ const sumAll = function(start, stop) {
 // Do not edit below this line
 module.exports = sumAll;
 
-// console.log(sumAll(1, 5))
+// console.log(sumAll(1.2, 4.9))
